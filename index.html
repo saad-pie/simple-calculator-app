@@ -1,1 +1,49 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Simple Calculator App</title><link rel="stylesheet" href="./style.css"></head><body><div class="calculator"><div class="display"><div data-previous-operand class="previous-operand"></div><div data-current-operand class="current-operand">0</div></div><div class="buttons"><button data-clear class="span-2 operator-btn">AC</button><button data-delete class="operator-btn">DEL</button><button data-operation class="operator-btn">/</button><button data-number>7</button><button data-number>8</button><button data-number>9</button><button data-operation class="operator-btn">*</button><button data-number>4</button><button data-number>5</button><button data-number>6</button><button data-operation class="operator-btn">-</button><button data-number>1</button><button data-number>2</button><button data-number>3</button><button data-operation class="operator-btn">+</button><button data-number class="span-2">0</button><button data-number>.</button><button data-equals class="equals-btn">=</button></div></div><script src="./script.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator App</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="display">
+            <div data-previous-operand class="previous-operand"></div>
+            <div data-current-operand class="current-operand">0</div>
+        </div>
+        <div class="buttons">
+            <button data-clear class="operator-btn">AC</button>
+            <button data-delete class="operator-btn">DEL</button>
+            <button data-operation="%" class="operator-btn">%</button>
+            <button data-operation="^" class="operator-btn">xʸ</button>
+            <button data-operation="/" class="operator-btn">/</button>
+
+            <button data-scientific-unary-op="sin" class="scientific-btn">sin</button>
+            <button data-scientific-unary-op="cos" class="scientific-btn">cos</button>
+            <button data-scientific-unary-op="tan" class="scientific-btn">tan</button>
+            <button data-scientific-unary-op="sqrt" class="scientific-btn">√</button>
+            <button data-operation="*" class="operator-btn">*</button>
+
+            <button data-number>7</button>
+            <button data-number>8</button>
+            <button data-number>9</button>
+            <button data-scientific-unary-op="log" class="scientific-btn">log</button>
+            <button data-operation="-" class="operator-btn">-</button>
+
+            <button data-number>4</button>
+            <button data-number>5</button>
+            <button data-number>6</button>
+            <button data-scientific-unary-op="ln" class="scientific-btn">ln</button>
+            <button data-operation="+" class="operator-btn">+</button>
+
+            <button data-constant="PI" class="scientific-btn">π</button>
+            <button data-constant="E" class="scientific-btn">e</button>
+            <button data-number>0</button>
+            <button data-number>.</button>
+            <button data-equals class="equals-btn">=</button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
